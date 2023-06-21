@@ -1,7 +1,7 @@
 import styles from "./background.module.css";
 import Image from "next/image";
 
-import meInTree from "../../../../public/meInTree.jpg";
+import meInTree from "./meInTree.jpg";
 
 export default function Background() {
   return (
