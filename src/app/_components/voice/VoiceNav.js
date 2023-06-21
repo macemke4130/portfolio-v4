@@ -90,6 +90,7 @@ export default function VoiceNav(props) {
       router.push("/resume");
     if (
       finalWord === "projects" ||
+      finalWord === "project" ||
       finalWord === "garage" ||
       finalWord === "play" ||
       finalWord === "price"
@@ -130,7 +131,7 @@ export default function VoiceNav(props) {
         </p>
         <p>This is a beta feature and won't work in all browsers.</p>
         <ul>
-          <li>Safari on desktop - Works best.</li>
+          <li>Safari - Works best.</li>
           <li>Chrome - Works well enough for beta.</li>
           <li>Firefox - Not yet supported.</li>
           <li>Brave - Not yet supported.</li>
