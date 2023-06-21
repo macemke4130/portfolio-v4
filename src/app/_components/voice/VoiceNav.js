@@ -109,6 +109,7 @@ export default function VoiceNav(props) {
   const requestMicrophoneAccess = () => {
     // Activates Speech Recognition useEffect.
     setRequestMicAccess(true);
+    setShowMicrophoneModal(false);
   };
 
   const closeMicophoneConsentModal = (e) => {
