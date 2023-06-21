@@ -1,0 +1,25 @@
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+  color: #122620;
+  font-weight: 700;
+  border: 1px solid #000;
+  background-color: #dcb78d;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.skill::selection {
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}

@@ -1,0 +1,34 @@
+.downloadResume {
+  display: block;
+  width: fit-content;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #000;
+  background-color: var(--textColor);
+  box-shadow: 2px 2px 0 #000;
+  margin: 0 auto 1rem auto;
+}
+
+.jobContainer {
+}
+
+.employer {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+
+.jobTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.jobDates {
+  font-size: 0.9rem;
+}
+
+.jobDesc {
+  margin: 0 0 1rem;
+}

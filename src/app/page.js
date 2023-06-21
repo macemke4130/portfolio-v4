@@ -1,95 +1,51 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <div className="pageContent">
+      <div className="purpleCard">
+        <h3>Biography</h3>
+        <p>Hello! My name is Lucas.</p>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          I have over 7 years of professional front end development experience.
+          I am a Full Stack Web Developer with an expanding focus on Page Speed
+          and Performance, SEO, Accessibility and Reusable code.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+        <p>
+          I currently work as the Lead Front End Web, React, UX/UI and VTEX
+          Developer for{" "}
+          <Link
+            href="https://www.eriksbikeshop.com/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+            Erik's Bike Shop
+          </Link>
+          , one of the largest bicycle and Winter sports shops in America.
+        </p>
+        <p>
+          My favorite tech stack at the moment is React, GraphQL, Express and
+          MySQL. If you're a bicycle nerd, you may enjoy my{" "}
+          <Link
+            href="https://www.namethatpart.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Name That Part
+          </Link>{" "}
+          game that utilizes those technologies.
+        </p>
+        <p>
+          In my free time, I enjoy fixing bicycles, but they're much more fun to
+          ride. I also love coffee, hiking, camping, skateboarding, photography,
+          live music and reading science fiction.
+        </p>
+        <p>
+          Please check out my <Link href="/resume">resume</Link> and my{" "}
+          <Link href="/skills">skills</Link> list for more information.
+        </p>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }

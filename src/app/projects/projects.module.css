@@ -1,0 +1,13 @@
+.projectImage {
+  margin: 0.25rem auto;
+  max-width: 500px;
+}
+
+.projectContainer {
+}
+
+.techStackTitle {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
