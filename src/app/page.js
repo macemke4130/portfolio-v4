@@ -8,9 +8,19 @@ export default function Home() {
         <h3>Biography</h3>
         <p>Hello! My name is Lucas.</p>
         <p>
-          I have over 7 years of professional front end development experience.
-          I am a Full Stack Web Developer with an expanding focus on Page Speed
-          and Performance, SEO, Accessibility and Reusable code.
+          I am a full stack web developer with over 7 years of experience in the
+          industry. I am proficient in a variety of web technologies, including
+          React, Next, Typescript / Javascript, MySQL, GraphQL, HTML, CSS and
+          more. I prefer to focus efforts on results based development, rather
+          than what “feels” right. I love to learn new technologies and believe
+          highly in continuing education.
+        </p>
+        <p>
+          I know that there are often many ways to achieve a desired outcome and
+          am always looking for new and innovative ways to improve the users'
+          experience. I am passionate about creating websites that are
+          accessible to everyone, regardless of their ability. I am also
+          committed to optimizing for search engines and page load speeds.
         </p>
         <p>
           I currently work as the Lead Front End Web, React, UX/UI and VTEX

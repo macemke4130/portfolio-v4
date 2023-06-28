@@ -12,7 +12,6 @@ export default function SkillsPage() {
           <div className={styles.skill}>TypeScript</div>
           <div className={styles.skill}>JavaScript</div>
           <div className={styles.skill}>UX / UI</div>
-          <div className={styles.skill}>Responsive Web Design</div>
           <div className={styles.skill}>MySQL</div>
           <div className={styles.skill}>Node JS</div>
           <div className={styles.skill}>Express JS</div>
@@ -24,6 +23,7 @@ export default function SkillsPage() {
           <div className={styles.skill}>CSS 3</div>
           <div className={styles.skill}>Styled Components</div>
           <div className={styles.skill}>SPAs</div>
+          <div className={styles.skill}>Responsive Web Development</div>
           <div className={styles.skill}>GitHub</div>
           <div className={styles.skill}>Salesforce / Heroku</div>
           <div className={styles.skill}>Adobe Suite</div>

@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Lucas Mace | Full Stack Web Developer",
   description:
-    "Lucas Mace is a Developer with an expanding focus on Page Speed and Performance, SEO, Accessibility and Reusable code.",
+    "Lucas Mace is a web developer with an expanding focus on Page Speed and Performance, SEO, Accessibility and Reusable code.",
 };
 
 export default function RootLayout({ children }) {

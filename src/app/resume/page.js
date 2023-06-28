@@ -7,7 +7,7 @@ export default function ResumePage() {
         <h3 className={styles.pageTitle}>Resume</h3>
       </div>
       <a
-        href="/lucas-mace-web-dev-resume.pdf"
+        href="/lucas-mace-web-dev-resume-23.pdf"
         download="lucas-mace-web-dev-resume.pdf"
         className={styles.downloadResume}
       >
@@ -18,7 +18,8 @@ export default function ResumePage() {
         <p>
           React, GraphQL, TypeScript, JavaScript, Next JS, UX/UI, MySQL, Node
           JS, Express JS, VTEX, JSON, JQuery, REST, HTML5, CSS3, Styled
-          Components, SPAs, GitHub, Salesforce / Heroku, Adobe Suite
+          Components, SPAs, Responsive Web Development, GitHub,{" "}
+          <span className="noWrap">Salesforce / Heroku,</span> Adobe Suite
         </p>
       </div>
       <div className="purpleCard">
@@ -32,28 +33,31 @@ export default function ResumePage() {
             November 2021 - Present / Minneapolis, MN
           </p>
           <p className={styles.jobDesc}>
-            Development, testing and implementation of all aspects of our
-            websites while focusing on site speed and performance. Create custom
-            React components to fit our unique needs. SEO and web accessibility
-            management. Create internal tools to increase productivity. Use
-            creative CSS skills to bring beauty to the websites. Launch new
-            standalone brand websites. Design and implement new webpage
-            features. <span className="noWrap">UX/UI management.</span>
+            Develop and maintain responsive customer facing web applications and
+            components using React / Next / Javascript, HTML CSS and more. Work
+            with the marketing team to bring new web features to life. Design
+            and implement new features and UX/UI interfaces. A B Testing of
+            pages and components. Test new and existing pages for performance
+            and optimize for page speed. Focus on building for SEO, web
+            accessibility and mobile{" "}
+            <span className="noWrap">first performance.</span>
           </p>
         </div>
         <hr></hr>
         <div className={styles.jobContainer}>
           <p className={styles.employer}>The Rave / Eagles Club</p>
-          <p className={styles.jobTitle}>Assistant Website Administrator</p>
+          <p className={styles.jobTitle}>Website Administrator</p>
           <p className={styles.jobDates}>
             March 2010 - April 2012 / Milwaukee, WI
           </p>
           <p className={styles.jobDesc}>
-            Website management and development. Photographing and filming music
-            videos, artist interviews, private musical sessions, and live
-            concerts. E-Commerce maintenance. Print and animated graphic
-            creation. Copywriting. Technical direction and vision mixing of live
-            webcasts.
+            Develop and maintain customer facing web applications and components
+            using Javascript, HTML and CSS. Develop back end CRUD applications
+            for front end management. Database management and optimization.
+            Implement and optimize video content for the web. E-Commerce
+            development. Work with the marketing team to bring new web features
+            to life. Print and animated graphic creation and manipulation using{" "}
+            <span className="noWrap">Adobe's Suite.</span>
           </p>
         </div>
         <hr></hr>
@@ -66,34 +70,18 @@ export default function ResumePage() {
             October 2005 - April 2009 / Pontiac, MI
           </p>
           <p className={styles.jobDesc}>
-            Web and Game development. E-Commerce integration. Online sales
-            training module creation. Touch screen kiosk development. Email
-            newsletter deployment. Print media creation. Video post production
-            and graphic animation. On site event production and graphic
-            director.
-          </p>
-        </div>
-        <hr></hr>
-        <div className={styles.jobContainer}>
-          <p className={styles.employer}>The Hub Bicycle Co-Op</p>
-          <p className={styles.jobTitle}>Service Manager and Head Mechanic</p>
-          <p className={styles.jobDates}>
-            March 2016 - August 2018 / Minneapolis, MN
-          </p>
-          <p className={styles.jobDesc}>
-            Management of service mechanic team of 30+, quality control of
-            bicycles, maintaining service department tools and budget, setting
-            worker schedules and maintaining labor budget, inventory control,
-            service writing and repair, maintaining and updating service
-            policies and procedures, writing and leading training sessions for
-            workers, hiring, Steering Committee member.
+            Develop and maintain websites and web components using Javascript,
+            HTML and CSS. Develop interactive, animated games, training modules
+            and websites using Adobe Flash and Actionscript. Develop, deploy and
+            maintain recipient lists for{" "}
+            <span className="noWrap">Email newsletters.</span>
           </p>
         </div>
       </div>
       <div className="purpleCard">
         <h4 className={styles.resumeTitle}>Education</h4>
         <div className={styles.schoolContainer}>
-          <p className={styles.jobTitle}>Covalence.io Bootcamp</p>
+          <p className={styles.jobTitle}>Covalence Technical Trade School</p>
           <p className={styles.employer}>Full Stack Development Graduate</p>
           <p className={styles.jobDates}>October 2020 - March 2021</p>
         </div>
