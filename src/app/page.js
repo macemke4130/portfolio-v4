@@ -1,19 +1,24 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
+import ExperienceTimer from "./_components/experienceTimer/ExperienceTimer";
+
 export default function Home() {
   return (
     <div className="pageContent">
-      <div className="purpleCard">
+      <div id="bio" className="purpleCard">
         <h3>Biography</h3>
         <p>Hello! My name is Lucas.</p>
         <p>
-          I am a full stack web developer with over 7 years of experience in the
-          industry. I am proficient in a variety of web technologies, including
-          React, Next, Typescript / Javascript, MySQL, GraphQL, HTML, CSS and
-          more. I prefer to focus efforts on results based development, rather
-          than what “feels” right. I love to learn new technologies and believe
-          highly in continuing education.
+          I am a full stack web developer with over <ExperienceTimer />{" "}
+          <span className="noWrap">of experience.</span>
+        </p>
+        <p>
+          I am proficient in a variety of web technologies, including React,
+          Next, Typescript / Javascript, MySQL, GraphQL, HTML, CSS and more. I
+          prefer to focus efforts on results based development, rather than what
+          “feels” right. I love to learn new technologies and believe highly in
+          continuing education.
         </p>
         <p>
           I know that there are often many ways to achieve a desired outcome and

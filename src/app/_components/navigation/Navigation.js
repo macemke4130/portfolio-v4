@@ -52,6 +52,7 @@ export default function Navigation() {
       <button
         ref={navigationOverlay}
         aria-label="Close Navigation Menu"
+        disabled={!openMenu}
         tabIndex="-1"
         onClick={toggleMenu}
         data-active={openMenu ? "true" : "false"}
