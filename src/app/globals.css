@@ -117,21 +117,6 @@ header {
   width: 80%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-    animation: none !important;
-  }
-}
-
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid yellow;
@@ -152,4 +137,19 @@ button:focus-visible::after {
   inset: 0;
   outline: 10px solid black;
   outline-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }

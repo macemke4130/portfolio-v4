@@ -20,12 +20,22 @@ export default function Navigation() {
     if (openMenu) setOpenMenu(false);
   };
 
+  // Function runs after the transition has ended
+  // and the overlay opacity has reached zero.
+  // setOverlayActive shrinks the overlay button to
+  // zero pixels to not interfere with other components.
   const handleOverlay = (e) => {
     const isActive = e.target.dataset.active === "true";
     setOverlayActive(isActive ? true : false);
   };
 
+  const handleKeyPress = (e) => {
+    const escKey = e.keyCode === 27;
+    if (escKey && openMenu) toggleMenu();
+  };
+
   useEffect(() => {
+    window.addEventListener("keyup", handleKeyPress);
     navigationOverlay.current?.addEventListener("transitionend", handleOverlay);
 
     return () => {
@@ -33,6 +43,7 @@ export default function Navigation() {
         "transitionend",
         handleOverlay
       );
+      window.removeEventListener("keyup", handleKeyPress);
     };
   });
 
@@ -46,8 +57,8 @@ export default function Navigation() {
         data-active={openMenu ? "true" : "false"}
         className={styles.overlay}
         style={{
-          width: overlayActive ? "auto" : "0",
-          height: overlayActive ? "auto" : "0",
+          width: overlayActive ? "100vw" : "0",
+          height: overlayActive ? "100vh" : "0",
         }}
       ></button>
       <button

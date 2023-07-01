@@ -6,11 +6,12 @@ export default function Console() {
   useEffect(() => {
     const style = `
     padding: 2rem;
-    background-color: rgba(83, 4, 23) ; 
-    color: #dcb78d ; 
-    font-weight: bold ;  
-    font-size: 20px ; 
-    text-align: center ;
+    background-color: rgba(83, 4, 23); 
+    color: #dcb78d; 
+    font-weight: bold;  
+    font-size: 20px; 
+    text-align: center;
+    line-height: 50px;
 `;
 
     console.info("%c Thanks for inspecting my console!", style);
