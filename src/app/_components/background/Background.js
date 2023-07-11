@@ -15,7 +15,9 @@ export default function Background() {
   const getUserMedia = async (constraints) => {
     const userMediaOptions = {
       audio: false,
-      video: true,
+      video: {
+        facingMode: { exact: "environment" },
+      },
     };
     try {
       stream.current = await navigator.mediaDevices.getUserMedia(
