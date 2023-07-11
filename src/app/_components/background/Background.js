@@ -15,18 +15,27 @@ export default function Background() {
   const getUserMedia = async (constraints) => {
     const deviceIsMobile = window.innerWidth < 1026;
 
-    const userVideo = { exact: "user" };
-    const environmentVideo = { exact: "environment" };
-
     const userMediaOptions = {
       audio: false,
-      video: deviceIsMobile ? environmentVideo : userVideo,
+      video: { exact: "user" },
+    };
+
+    const environmentMediaOptions = {
+      audio: false,
+      video: { exact: "environment" },
     };
 
     try {
-      stream.current = await navigator.mediaDevices.getUserMedia(
-        userMediaOptions
-      );
+      if (deviceIsMobile) {
+        stream.current = await navigator.mediaDevices.getUserMedia(
+          userMediaOptions
+        );
+      } else {
+        stream.current = await navigator.mediaDevices.getUserMedia(
+          environmentMediaOptions
+        );
+      }
+
       videoElement.current.srcObject = stream.current;
       setStreamBackground(true);
     } catch (e) {
