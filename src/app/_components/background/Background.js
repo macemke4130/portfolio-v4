@@ -13,12 +13,16 @@ export default function Background() {
   const stream = useRef(null);
 
   const getUserMedia = async (constraints) => {
+    const deviceIsMobile = window.innerWidth < 1026;
+
+    const userVideo = { exact: "user" };
+    const environmentVideo = { exact: "environment" };
+
     const userMediaOptions = {
       audio: false,
-      video: {
-        facingMode: { facingMode: "environment" },
-      },
+      video: deviceIsMobile ? environmentVideo : userVideo,
     };
+
     try {
       stream.current = await navigator.mediaDevices.getUserMedia(
         userMediaOptions
