@@ -28,11 +28,11 @@ export default function Background() {
     try {
       if (deviceIsMobile) {
         stream.current = await navigator.mediaDevices.getUserMedia(
-          userMediaOptions
+          environmentMediaOptions
         );
       } else {
         stream.current = await navigator.mediaDevices.getUserMedia(
-          environmentMediaOptions
+          userMediaOptions
         );
       }
 
