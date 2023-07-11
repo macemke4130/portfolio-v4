@@ -16,7 +16,7 @@ export default function Background() {
     const userMediaOptions = {
       audio: false,
       video: {
-        facingMode: { exact: "environment" },
+        facingMode: { facingMode: "environment" },
       },
     };
     try {
