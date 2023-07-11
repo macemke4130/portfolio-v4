@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import styles from "./background.module.css";
 import Image from "next/image";
@@ -11,6 +11,21 @@ export default function Background() {
   const [streamBackground, setStreamBackground] = useState(false);
   const videoElement = useRef();
   const stream = useRef(null);
+
+  useEffect(() => {
+    navigator.mediaDevices.addEventListener("devicechange", handleStopStream);
+
+    return () => {
+      navigator.mediaDevices.removeEventListener(
+        "devicechange",
+        handleStopStream
+      );
+    };
+  });
+
+  const handleStopStream = (e) => {
+    console.info(e);
+  };
 
   const getUserMedia = async (constraints) => {
     const deviceIsMobile = window.innerWidth < 1026;
