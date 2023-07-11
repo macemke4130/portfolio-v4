@@ -10,3 +10,19 @@
   object-fit: cover;
   user-select: none;
 }
+
+.backgroundButon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  border: none;
+}
+
+.videoBackground {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}

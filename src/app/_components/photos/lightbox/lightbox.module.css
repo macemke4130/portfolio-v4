@@ -1,0 +1,55 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  padding: 0;
+}
+
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 12;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.bigImage {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+.leftNavButton,
+.rightNavButton {
+  position: fixed;
+  top: 50%;
+  padding: 1rem;
+  z-index: 13;
+  font-size: 3rem;
+  transform: translateY(-50%);
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Rules - LM */
+@media (max-width: 1025px) {
+  .leftNavButton,
+  .rightNavButton {
+    top: 90%;
+  }
+}
+
+.leftNavButton {
+  left: 1rem;
+}
+
+.rightNavButton {
+  right: 1rem;
+}

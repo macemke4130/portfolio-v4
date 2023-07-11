@@ -1,0 +1,16 @@
+.thumbnailList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.thumbnailButton {
+  display: block;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.thumbnailImage {
+}

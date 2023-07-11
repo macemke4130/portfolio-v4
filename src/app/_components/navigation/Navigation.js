@@ -116,6 +116,15 @@ export default function Navigation() {
                 Projects
               </Link>
             </li>
+            {/* <li>
+              <Link
+                href="/photography"
+                tabIndex={openMenu ? "0" : "-1"}
+                onClick={navigate}
+              >
+                Photography
+              </Link>
+            </li> */}
             <li>
               <Link
                 href="/contact"
