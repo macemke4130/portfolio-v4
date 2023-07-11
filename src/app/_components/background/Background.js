@@ -17,12 +17,16 @@ export default function Background() {
 
     const userMediaOptions = {
       audio: false,
-      video: { exact: "environment" },
+      video: {
+        facingMode: { exact: "user" },
+      },
     };
 
     const environmentMediaOptions = {
       audio: false,
-      video: { exact: "environment" },
+      video: {
+        facingMode: { exact: "environment" },
+      },
     };
 
     try {
