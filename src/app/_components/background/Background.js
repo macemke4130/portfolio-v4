@@ -17,7 +17,7 @@ export default function Background() {
 
     const userMediaOptions = {
       audio: false,
-      video: { exact: "user" },
+      video: { exact: "environment" },
     };
 
     const environmentMediaOptions = {
