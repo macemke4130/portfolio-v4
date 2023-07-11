@@ -17,9 +17,7 @@ export default function Background() {
 
     const userMediaOptions = {
       audio: false,
-      video: {
-        facingMode: { exact: "user" },
-      },
+      video: { facingMode: "user" },
     };
 
     const environmentMediaOptions = {
@@ -30,16 +28,9 @@ export default function Background() {
     };
 
     try {
-      if (deviceIsMobile) {
-        stream.current = await navigator.mediaDevices.getUserMedia(
-          environmentMediaOptions
-        );
-      } else {
-        stream.current = await navigator.mediaDevices.getUserMedia(
-          userMediaOptions
-        );
-      }
-
+      stream.current = await navigator.mediaDevices.getUserMedia(
+        deviceIsMobile ? environmentMediaOptions : userMediaOptions
+      );
       videoElement.current.srcObject = stream.current;
       setStreamBackground(true);
     } catch (e) {
