@@ -79,7 +79,7 @@ export default function Photos() {
   };
 
   const handleThumbnailClick = (e) => {
-    setBigImage(Number(e.target.dataset.index));
+    setBigImage(Number(e.currentTarget.dataset.index));
   };
 
   const closeLightBox = () => {
@@ -97,6 +97,7 @@ export default function Photos() {
   return (
     <>
       <PhotoThumbnails
+        bigImage={bigImage}
         imageFileNames={imageFileNames}
         handleThumbnailClick={handleThumbnailClick}
       />
@@ -104,6 +105,7 @@ export default function Photos() {
         bigImage={bigImage}
         bigImageSrc={bigImageSrc}
         closeLightBox={closeLightBox}
+        imageFileNames={imageFileNames}
         navigateLeft={navigateLeft}
         navigateRight={navigateRight}
       />

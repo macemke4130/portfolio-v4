@@ -74,7 +74,7 @@ export default function Background() {
         onClick={handleBackgroundChange}
         className={styles.backgroundButon}
       >
-        {`Use ${streamBackground ? "Default" : "environment as"} background`}
+        {`Use ${streamBackground ? "default" : "environment as"} background`}
       </button>
       <div className={styles.backgroundContainer}>
         <Image

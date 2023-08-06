@@ -9,12 +9,70 @@ import wsg from "../../../public/wsg.jpg";
 import cbp from "../../../public/cbp.jpg";
 import gpd from "../../../public/gpd.jpg";
 import ghr from "../../../public/ghr.jpg";
+import ebsw from "../../../public/ebsw.jpg";
+import rbw from "../../../public/rbw.jpg";
 
 export default function ProjectsPage() {
   return (
     <div className="pageContent">
       <div className="purpleCard">
         <h3 className="pageTitle">Projects</h3>
+      </div>
+      <div className="purpleCard">
+        <div className={styles.projectContainer}>
+          <h4>Erik's Bike Board and Ski Website</h4>
+          <Image
+            className={styles.projectImage}
+            alt="Preview of Erik's Bike Shop Website."
+            loading="lazy"
+            src={ebsw}
+          />
+          <p>
+            Retail website for Erik's Bike, Board and Ski. One of the largest
+            outdoor companies in the industry. Built on VTEX's platform, the
+            website handles search, purchasing, shipping and many other aspects
+            critical to having an online store as well as 30+ physical retail
+            locations around the country.
+          </p>
+          <p className={styles.techStackTitle}>Tech Stack</p>
+          <p className="techStack">React, VTEX</p>
+          <p>
+            <a
+              href="https://www.eriksbikeshop.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Project
+            </a>
+          </p>
+        </div>
+      </div>
+      <div className="purpleCard">
+        <div className={styles.projectContainer}>
+          <h4>Rampar Bikes Website</h4>
+          <Image
+            className={styles.projectImage}
+            alt="Preview of Rampar Bikes Website."
+            loading="lazy"
+            src={rbw}
+          />
+          <p>
+            Website for Rampar Bicycles. Rampar is a bicycle company that is
+            exclusively sold in stores but required a website in order to
+            showcase its products and add credibility to the brand.
+          </p>
+          <p className={styles.techStackTitle}>Tech Stack</p>
+          <p className="techStack">React, VTEX</p>
+          <p>
+            <a
+              href="https://www.ramparbikes.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Project
+            </a>
+          </p>
+        </div>
       </div>
       <div className="purpleCard">
         <div className={styles.projectContainer}>

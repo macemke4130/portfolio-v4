@@ -6,11 +6,13 @@ export default function ThumbnailList(props) {
       {props.imageFileNames.map((image) => (
         <button
           key={"index-" + image.index}
+          // Inactivate button focus ability while lightbox is open - LM
+          tabIndex={props.bigImage > -1 ? "-1" : "0"}
+          data-index={image.index}
           onClick={props.handleThumbnailClick}
           className={styles.thumbnailButton}
         >
           <img
-            data-index={image.index}
             src={image.thumbSrc}
             width={150}
             height={150}

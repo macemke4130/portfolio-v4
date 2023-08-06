@@ -15,9 +15,14 @@
   z-index: 12;
   display: grid;
   place-items: center;
-  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  /* pointer-events: none; */
+  aspect-ratio: 4 /3;
+  margin: auto;
 }
 
+.wrapper,
 .bigImage {
   max-width: 95vw;
   max-height: 95vh;
@@ -28,7 +33,7 @@
 .rightNavButton {
   position: fixed;
   top: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
   z-index: 13;
   font-size: 3rem;
   transform: translateY(-50%);
@@ -52,4 +57,17 @@
 
 .rightNavButton {
   right: 1rem;
+}
+
+.navArrow {
+  width: clamp(2rem, 3vw, 5rem);
+  height: clamp(2rem, 3vw, 5rem);
+}
+
+.leftNavButton .navArrow {
+  transform: rotate(-90deg);
+}
+
+.rightNavButton .navArrow {
+  transform: rotate(90deg);
 }
