@@ -81,6 +81,7 @@ export default function Background() {
           src={meInTree}
           alt=""
           loading="eager"
+          fetchPriority="high"
           className={styles.backgroundImage}
           style={{ display: `${streamBackground ? "none" : "block"}` }}
         />

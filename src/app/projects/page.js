@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           <Image
             className={styles.projectImage}
             alt="Preview of Erik's Bike Shop Website."
-            loading="lazy"
+            loading="eager"
             src={ebsw}
           />
           <p>
