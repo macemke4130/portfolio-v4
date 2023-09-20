@@ -10,6 +10,7 @@ export default function SecureRedirect() {
       const userPath = window.location.pathname;
       
       if (window.location.hostname === "localhost") return;
+      console.clear();
       window.location.replace(`https://www.lucasmace.com${userPath}`);
     }
 
