@@ -34,7 +34,7 @@ export default function ResumePage() {
           </p>
           <p className={styles.jobDesc}>
             Develop and maintain responsive customer facing web applications and
-            components using React / Next / Javascript, HTML CSS and more. Work
+            components using React / Next / Javascript, HTML, CSS and more. Work
             with the marketing team to bring new web features to life. Design
             and implement new features and UX/UI interfaces. A B Testing of
             pages and components. Test new and existing pages for performance
