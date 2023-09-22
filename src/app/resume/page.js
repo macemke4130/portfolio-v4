@@ -1,4 +1,7 @@
+import { Fragment } from "react";
 import styles from "./resume.module.css";
+
+import { skillset } from "../ssot";
 
 export default function ResumePage() {
   return (
@@ -16,10 +19,17 @@ export default function ResumePage() {
       <div className="purpleCard">
         <h4 className={styles.resumeTitle}>Skills</h4>
         <p>
-          React, GraphQL, TypeScript, JavaScript, Next JS, UX/UI, MySQL, Node
-          JS, Express JS, VTEX, JSON, JQuery, REST, HTML5, CSS3, Styled
-          Components, SPAs, Responsive Web Development, GitHub,{" "}
-          <span className="noWrap">Salesforce / Heroku,</span> Adobe Suite
+          {skillset.map((skill, index) => (
+            <Fragment key={skill}>
+              {`${skill}${
+                index === skillset.length - 2
+                  ? " and "
+                  : index === skillset.length - 1
+                  ? "."
+                  : ", "
+              }`}
+            </Fragment>
+          ))}
         </p>
       </div>
       <div className="purpleCard">
