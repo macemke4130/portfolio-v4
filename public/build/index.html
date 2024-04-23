@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Bicycle Builder Sticker</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Serialized Build Sticker</h1>
-        <small>Version 1.5</small>
-        <h3>Built by <a href="http://www.lucasmace.com/" target="_blank" rel="noreferrer">Lucas Mace</a></h3>
-        <a href="./customSticker.html">Custom Sticker</a>
+      <h1>Serialized Build Sticker</h1>
+      <small>Version 1.6</small>
+      <h3>Built by <a href="http://www.lucasmace.com/" target="_blank" rel="noreferrer">Lucas Mace</a></h3>
+      <a href="./customSticker.html">Custom Sticker</a>
     </header>
     <main>
-        <p><small class="black-text">Sticker will open in new window and close automatically, 10 seconds after
-                printing.</small></p>
-        <p class="margin-bottom"><small class="black-text">Set Zebra Label Printer Margins to "None".</small></p>
-        <form id="controls">
-            <label>Bicycle Serial Number</label>
-            <input id="serial-input" type="text" autocomplete="off" onkeyup="generate()" />
-            <label>E-Bike Key Serial Number</label>
-            <input id="bike-key-input" type="text" autocomplete="off" onkeyup="generate()" />
-            <select id="tires-input" onchange="generate()">
-                <option value="none">Non-Tubeless Bicycle / Tubed Only</option>
-                <option value="orange">Orange Seal</option>
-                <option value="stan">Stan's</option>
-                <option value="tubed">Tubes inside Tubeless Bicycle</option>
-            </select>
-            <label>Builder</label>
-            <input id="builder-input" type="text" autocomplete="off" onkeyup="generate()" />
-            <input id="print" type="submit" value="Print" />
-        </form>
-        <section id="sticker-preview">
-            <p id="builder-preview"></p>
-            <p id="tires-preview"></p>
-            <div class="barcode-group">
-                <p id="serial-preview-text"></p>
-                <svg id="serial-preview-barcode"></svg>
-            </div>
-            <div class="barcode-group">
-                <p id="bike-key-preview-text"></p>
-                <svg id="bike-key-preview-barcode"></svg>
-            </div>
-        </section>
-        <button id="load-previous">Load Previous</button>
+      <p><small class="black-text">Sticker will open in new window and close automatically, 10 seconds after printing.</small></p>
+      <p class="margin-bottom"><small class="black-text">Set Zebra Label Printer Margins to "None".</small></p>
+      <form id="controls">
+        <label>Bicycle Serial Number</label>
+        <input id="serial-input" type="text" autocomplete="off" onkeyup="generate()" />
+        <label>E-Bike Key Serial Number</label>
+        <input id="bike-key-input" type="text" autocomplete="off" onkeyup="generate()" />
+        <select id="tires-input" onchange="generate()">
+          <option value="none">Non-Tubeless Bicycle / Tubed Only</option>
+          <option value="orange">Orange Seal</option>
+          <option value="stan">Stan's</option>
+          <option value="reserve">Reserve</option>
+          <option value="tubed">Tubes inside Tubeless Bicycle</option>
+        </select>
+        <label>Builder</label>
+        <input id="builder-input" type="text" autocomplete="off" onkeyup="generate()" />
+        <input id="print" type="submit" value="Print" />
+      </form>
+      <section id="sticker-preview">
+        <p id="builder-preview"></p>
+        <p id="tires-preview"></p>
+        <div class="barcode-group">
+          <p id="serial-preview-text"></p>
+          <svg id="serial-preview-barcode"></svg>
+        </div>
+        <div class="barcode-group">
+          <p id="bike-key-preview-text"></p>
+          <svg id="bike-key-preview-barcode"></svg>
+        </div>
+      </section>
+      <button id="load-previous">Load Previous</button>
     </main>
     <script src="./JsBarcode.all.min.js"></script>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
