@@ -198,8 +198,7 @@ const printIt = () => {
   const popupPrint = window.open("", "", "height=750, width=750");
   popupPrint.document.write(`<html><body>
       <style>
-      html { height: 100vh; }
-      body{ margin: 0; height: 100vh; font-family: monospace; display: grid; place-items: center; }
+      body{ margin: 0; font-family: monospace; display: grid; place-items: center; }
   
       #sticker-preview {
       text-align: center;
