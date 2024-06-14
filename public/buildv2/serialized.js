@@ -238,7 +238,7 @@ const printIt = () => {
 
   // Close Popup
   setTimeout(() => {
-    // popupPrint.close();
+    popupPrint.close();
     window.location.reload();
   }, 100);
 };
