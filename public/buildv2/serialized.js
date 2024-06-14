@@ -195,7 +195,7 @@ const handleTireClick = (event) => {
 const printIt = () => {
   const stickerHTML = document.querySelector("#sticker-wrapper").innerHTML;
 
-  const popupPrint = window.open("", "", "height=1000, width=1000");
+  const popupPrint = window.open("", "", "height=750, width=750");
   popupPrint.document.write(`<html><body>
       <style>
       html { height: 100vh; }
@@ -204,12 +204,9 @@ const printIt = () => {
       #sticker-preview {
       text-align: center;
       text-transform: uppercase;
-      margin: 2rem auto;
+      margin: 0 auto;
       width: 2.25in;
       height: 1.25in;
-      border: 1px solid black;
-      border-radius: 5px;
-      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -242,7 +239,7 @@ const printIt = () => {
 
   // Close Popup
   setTimeout(() => {
-    popupPrint.close();
+    // popupPrint.close();
     window.location.reload();
   }, 100);
 };
