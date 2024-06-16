@@ -157,8 +157,7 @@ const populateBuilderList = () => {
   if (!builderList) return;
 
   const builderArray = builderList.split(", ").filter((builder) => {
-    if (builder === "") return false;
-    if (builder === "null") return false;
+    if (!builder || builder === "null") return false;
     return true;
   });
 

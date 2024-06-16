@@ -1,33 +1,73 @@
 console.log("Created by Lucas Mace");
 console.log("lucasmace4130@gmail.com");
 
-const inputTitle = document.getElementById("title");
-const inputBody = document.getElementById("body");
-const titlePreview = document.getElementById("title-preview");
-const bodyPreview = document.getElementById("body-preview");
-const clear = "";
+const titleInput = document.querySelector("#title");
+const bodyInput = document.querySelector("#body");
+const titlePreview = document.querySelector("#title-preview");
+const bodyPreview = document.querySelector("#body-preview");
+const printButton = document.querySelector("#print-button");
 
 const generate = () => {
-    titlePreview.innerText = inputTitle.value;
-    bodyPreview.innerText = inputBody.value;
-}
+  titlePreview.innerText = titleInput.value;
+  bodyPreview.innerText = bodyInput.value;
+};
 
-const sendToPrint = (e) => {
-    e.preventDefault();
+const printIt = () => {
+  const stickerHTML = document.querySelector("#sticker-wrapper").innerHTML;
 
-    localStorage.clear();
-    localStorage.setItem("title", inputTitle.value);
-    localStorage.setItem("body", inputBody.value);
+  const popupPrint = window.open("", "", "height=750, width=750");
+  popupPrint.document.write(`<html><body>
+        <style>
+        body{ margin: 0; font-family: monospace; display: grid; place-items: center; }
+    
+        #sticker-preview {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        width: 2.25in;
+        height: 1.25in;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    
+        p { margin: 0; }
+    
+        p:empty { display:none; }
+    
+        .barcode-group {
+          line-height: 0.8;
+          margin: 0;
+          padding: 0;
+        }
+    
+        svg {
+          display: block;
+          margin: 0 auto;
+        }
+    
+        svg:empty {
+          display: none;
+        }
 
-    inputTitle.value = clear;
-    inputBody.value = clear;
-    titlePreview.innerText = clear;
-    bodyPreview.innerText = clear;
+        #title-preview {
+          font-weight: bold;
+          font-size: 1.25rem;
+        }
+        </style>
+        ${stickerHTML}
+        </body></html>`);
 
-    inputTitle.focus();
+  popupPrint.document.close();
+  popupPrint.print();
 
-    window.open("./printCustomSticker.html", "_blank");
-}
+  // Close Popup
+  setTimeout(() => {
+    popupPrint.close();
+    window.location.reload();
+  }, 100);
+};
 
-document.getElementById("controls").onsubmit = sendToPrint;
-document.getElementById("print").onclick = sendToPrint;
+titleInput.addEventListener("keyup", generate);
+bodyInput.addEventListener("keyup", generate);
+printButton.addEventListener("click", printIt);

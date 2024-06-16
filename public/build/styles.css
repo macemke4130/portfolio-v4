@@ -34,11 +34,18 @@ header {
   align-items: center;
   color: white;
   padding: 2rem 0;
-  border-bottom: dashed white 0.5em;
+  border-bottom: dashed white 0.5rem;
   background: black;
 }
 main {
   padding-top: 1rem;
+}
+
+#main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .instructions {
@@ -106,6 +113,10 @@ button {
   padding: 0.5rem 1rem;
 }
 
+.custom button {
+  margin-top: 1rem;
+}
+
 #sticker-preview {
   text-transform: uppercase;
   margin: 2rem auto;
@@ -113,11 +124,25 @@ button {
   height: 1.25in;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0.2em 0.2em 0.5em black;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+#sticker-preview.custom {
+  justify-content: center;
+  gap: 1rem;
+}
+
+#sticker-preview.custom p:empty {
+  display: none;
+}
+
+#title-preview {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .barcode-group {

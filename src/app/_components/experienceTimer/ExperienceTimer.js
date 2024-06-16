@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 
 import styles from "./experienceTimer.module.css";
 
+// Hard coded for server side SEO
 const blankExperience = {
-  years: 7, // Hard coded for server side SEO
+  years: 8,
   months: 0,
-  days: 0,
-  hours: 0,
-  minutes: 0,
-  seconds: 0.0001,
+  days: 18,
+  hours: 4,
+  minutes: 58,
+  seconds: 11.548,
 };
 
 const msInSecond = 1000;
@@ -64,11 +65,11 @@ export default function ExperienceTimer() {
 
   return (
     <span className={styles.experienceTimer}>
-      {experience.years} years, {experience.months}{" "}
-      {`month${experience.months > 1 ? "s" : ""}`}, {experience.days}{" "}
-      {`day${experience.days > 1 ? "s" : ""}`}, {experience.hours}{" "}
-      {`hour${experience.hours > 1 ? "s" : ""}`}, {experience.minutes}{" "}
-      {`minute${experience.minutes > 1 ? "s" : ""}`} and{" "}
+      {experience.years} years, {` `}
+      {experience.months} {`month${experience.months !== 1 ? "s" : ""}`},{` `}
+      {experience.days} {`day${experience.days !== 1 ? "s" : ""}`},{` `}
+      {experience.hours} {`hour${experience.hours !== 1 ? "s" : ""}`},{` `}
+      {experience.minutes} {`minute${experience.minutes !== 1 ? "s" : ""}`} and{` `}
       <span className="noWrap">
         {experience.seconds} {`second${experience.seconds !== 1 ? "s" : ""}`}
       </span>
