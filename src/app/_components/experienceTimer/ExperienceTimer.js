@@ -7,8 +7,8 @@ import styles from "./experienceTimer.module.css";
 // Hard coded for server side SEO
 const blankExperience = {
   years: 8,
-  months: 0,
-  days: 18,
+  months: 3,
+  days: 23,
   hours: 4,
   minutes: 58,
   seconds: 11.548,
