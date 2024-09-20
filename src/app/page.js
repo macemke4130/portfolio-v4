@@ -33,7 +33,7 @@ export default function Home() {
         </p>
         <p>
           If you have a project you would like to discuss, I would love to hear all about it. I work on a sliding scale for web development, especially for
-          non-profit or community based orginizations. Please reach out to me at <a href="mailto: lucasmace4130@gmail.com">lucasmace4130@gmail.com</a>
+          non-profit or community based organizations. Please reach out to me at <a href="mailto: lucasmace4130@gmail.com">lucasmace4130@gmail.com</a>
         </p>
         <p>
           Please check out my <Link href="/resume">resume</Link> for more information.
