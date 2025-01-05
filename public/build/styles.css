@@ -106,6 +106,9 @@ input {
 #builder-list {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 40rem;
+  justify-content: center;
 }
 
 button {

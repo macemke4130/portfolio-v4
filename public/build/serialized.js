@@ -82,7 +82,7 @@ const setDateInputToCurrentDate = () => {
   const rightNow = new Date(Date.now());
   const theYear = rightNow.getFullYear();
   const theMonth = rightNow.getMonth() + 1 < 10 ? `0${rightNow.getMonth() + 1}` : rightNow.getMonth() + 1;
-  const theDay = rightNow.getDate();
+  const theDay = rightNow.getDate() < 10 ? `0${rightNow.getDate()}` : rightNow.getDate();
   const theDate = `${theYear}-${theMonth}-${theDay}`;
 
   dateInput.value = theDate;
