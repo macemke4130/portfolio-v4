@@ -1,9 +1,10 @@
 export const skillset = [
-  "React JS 18",
-  "Next JS 13",
+  "React JS",
+  "Next JS",
   "GraphQL",
   "TypeScript",
   "JavaScript",
+  "Shopify / Liquid",
   "Sass / SCSS",
   "UX / UI",
   "MySQL",
@@ -18,6 +19,7 @@ export const skillset = [
   "Responsive Web Development",
   "GitHub",
   "VTEX",
+  "Sitecore",
   "Salesforce / Heroku",
   "Adobe Suite",
 ];

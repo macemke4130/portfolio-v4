@@ -39,10 +39,7 @@ export default function Navigation() {
     navigationOverlay.current?.addEventListener("transitionend", handleOverlay);
 
     return () => {
-      navigationOverlay.current?.removeEventListener(
-        "transitionend",
-        handleOverlay
-      );
+      navigationOverlay.current?.removeEventListener("transitionend", handleOverlay);
       window.removeEventListener("keyup", handleKeyPress);
     };
   });
@@ -73,46 +70,26 @@ export default function Navigation() {
         <div className={styles.line}></div>
         <div className={styles.line}></div>
       </button>
-      <div
-        className={styles.navDrawer}
-        id="navigationDrawer"
-        aria-hidden={!openMenu}
-      >
+      <div className={styles.navDrawer} id="navigationDrawer" aria-hidden={!openMenu}>
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link
-                href="/"
-                tabIndex={openMenu ? "0" : "-1"}
-                onClick={navigate}
-              >
+              <Link href="/" tabIndex={openMenu ? "0" : "-1"} onClick={navigate}>
                 Biography
               </Link>
             </li>
             <li>
-              <Link
-                href="/skills"
-                tabIndex={openMenu ? "0" : "-1"}
-                onClick={navigate}
-              >
+              <Link href="/skills" tabIndex={openMenu ? "0" : "-1"} onClick={navigate}>
                 Skills
               </Link>
             </li>
             <li>
-              <Link
-                href="/resume"
-                tabIndex={openMenu ? "0" : "-1"}
-                onClick={navigate}
-              >
+              <Link href="/resume" tabIndex={openMenu ? "0" : "-1"} onClick={navigate}>
                 Resume
               </Link>
             </li>
             <li>
-              <Link
-                href="/projects"
-                tabIndex={openMenu ? "0" : "-1"}
-                onClick={navigate}
-              >
+              <Link href="/projects" tabIndex={openMenu ? "0" : "-1"} onClick={navigate}>
                 Projects
               </Link>
             </li>
@@ -126,17 +103,13 @@ export default function Navigation() {
               </Link>
             </li> */}
             <li>
-              <Link
-                href="/contact"
-                tabIndex={openMenu ? "0" : "-1"}
-                onClick={navigate}
-              >
+              <Link href="/contact" tabIndex={openMenu ? "0" : "-1"} onClick={navigate}>
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <VoiceNav toggleMenu={toggleMenu} />
-            </li>
+            </li> */}
           </ul>
         </nav>
         <button onClick={navigate} className={styles.closeNavButton}>

@@ -9,7 +9,7 @@ export default function ResumePage() {
       <div className="purpleCard">
         <h3 className={styles.pageTitle}>Resume</h3>
       </div>
-      <a href="/lucas-mace-web-dev-24.pdf" download="lucas-mace-web-dev-resume.pdf" className={styles.downloadResume}>
+      <a href="/lucas-mace-web-dev-25.pdf" download="lucas-mace-web-dev-resume.pdf" className={styles.downloadResume}>
         Download PDF
       </a>
       <div className="purpleCard">
