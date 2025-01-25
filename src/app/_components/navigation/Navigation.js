@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
-import VoiceNav from "../voice/VoiceNav";
+// import VoiceNav from "../voice/VoiceNav";
 import styles from "./navigation.module.css";
 
 export default function Navigation() {

@@ -1,7 +1,7 @@
 import styles from "./projects.module.css";
 import Image from "next/image";
 
-import ntp from "../../../public/ntp.jpg";
+import ntp from "../../../public/ntp.png";
 import dt from "../../../public/dt.jpg";
 import dn from "../../../public/dn.jpg";
 import tcsi from "../../../public/tcsi.jpg";
@@ -88,14 +88,14 @@ export default function ProjectsPage() {
             advance on each selection to keep the game play inturrupted. Stats are collected at the end of each game and sent to the database.
           </p>
           <p className={styles.techStackTitle}>Tech Stack</p>
-          <p className="techStack">React, GraphQL, Express, MySQL, Styled Components, React Router</p>
+          <p className="techStack">TypeScript, Express, MySQL</p>
           <p>
             <a href="http://www.namethatpart.com/" target="_blank" rel="noreferrer">
               Live Project
             </a>
           </p>
           <p>
-            <a href="https://github.com/macemke4130/Bicycle-Mechanic-Game-v3" target="_blank" rel="noreferrer">
+            <a href="https://github.com/macemke4130/ntpv2" target="_blank" rel="noreferrer">
               GitHub Repo
             </a>
           </p>
