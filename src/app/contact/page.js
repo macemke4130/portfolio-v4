@@ -8,30 +8,18 @@ export default function ContactPage() {
           <a href="mailto:lucasmace4130@gmail.com">lucasmace4130@gmail.com</a>
         </p>
         <p>
-          <a
-            href="https://www.linkedin.com/in/lucas-mace-7857b1103/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://bsky.app/profile/macemke.bsky.social" target="_blank" rel="noreferrer">
+            Bluesky
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/lucas-mace-7857b1103/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
         </p>
         <p>
-          <a
-            href="https://github.com/macemke4130/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/macemke4130/" target="_blank" rel="noreferrer">
             GitHub
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://www.instagram.com/lucasmacephoto/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Instagram
           </a>
         </p>
       </div>

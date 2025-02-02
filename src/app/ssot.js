@@ -14,6 +14,7 @@ export const skillset = [
   "REST",
   "HTML 5",
   "CSS 3",
+  "Azure DevOps",
   "Styled Components",
   "SPAs",
   "Responsive Web Development",
